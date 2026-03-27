@@ -115,7 +115,7 @@ with tab2:
         st.plotly_chart(fig_type, use_container_width=True)
 
     with col_b:
-        st.subheader("🏛️ College-wise Participation (Top 10)")
+        st.subheader("College-wise Participation (Top 10)")
         college_counts = fdf["College"].value_counts().head(10).reset_index()
         college_counts.columns = ["College", "Count"]
 
